@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{58318B91-455A-414F-B45E-8591A65D22DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_restaurant_reservation</RootNamespace>
+    <AssemblyName>Project-restaurant-reservation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro_platos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_platos.Designer.cs">
+      <DependentUpon>Registro_platos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_usuarios.Designer.cs">
+      <DependentUpon>Registro_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reserva_mesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reserva_mesa.Designer.cs">
+      <DependentUpon>Reserva_mesa.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro_platos.resx">
+      <DependentUpon>Registro_platos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_usuarios.resx">
+      <DependentUpon>Registro_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reserva_mesa.resx">
+      <DependentUpon>Reserva_mesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fanesca.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fritada.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\encebollado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guatita.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caldo de bolas de verde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hornado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-restaurantes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-usuarios.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-login.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
