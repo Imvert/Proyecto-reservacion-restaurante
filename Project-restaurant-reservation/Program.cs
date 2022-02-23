@@ -21,6 +21,8 @@ namespace Project_restaurant_reservation
             //Application.Run(new Registro_usuarios());
             //Application.Run(new Reserva_mesa());
             //Application.Run(new Form1());
+            //Application.Run(new Reserva());
+            //Application.Run(new PlantUsuarios());
         }
     }
 }

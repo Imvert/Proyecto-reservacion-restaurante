@@ -66,11 +66,11 @@ namespace Project_restaurant_reservation
                         this.Hide();
                         if (dt1.Rows[0][1].ToString() == "1")//administrador
                         {
-                            new Registro_platos().ShowDialog();
+                            new plantilla().ShowDialog();
                         }
                         else if (dt1.Rows[0][1].ToString() == "2")//Cliente
                         {
-                            new Reserva_mesa().ShowDialog();
+                            new PlantUsuarios().ShowDialog();
                         }
                         this.Close();
                     }
