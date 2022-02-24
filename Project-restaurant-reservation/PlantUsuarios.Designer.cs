@@ -57,7 +57,7 @@ namespace Project_restaurant_reservation
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(200, 504);
+            this.panelSideMenu.Size = new System.Drawing.Size(199, 504);
             this.panelSideMenu.TabIndex = 0;
             // 
             // panelActividadSubMenu
@@ -68,7 +68,7 @@ namespace Project_restaurant_reservation
             this.panelActividadSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelActividadSubMenu.Location = new System.Drawing.Point(0, 251);
             this.panelActividadSubMenu.Name = "panelActividadSubMenu";
-            this.panelActividadSubMenu.Size = new System.Drawing.Size(200, 81);
+            this.panelActividadSubMenu.Size = new System.Drawing.Size(199, 81);
             this.panelActividadSubMenu.TabIndex = 4;
             // 
             // button6
@@ -80,7 +80,7 @@ namespace Project_restaurant_reservation
             this.button6.Location = new System.Drawing.Point(0, 35);
             this.button6.Name = "button6";
             this.button6.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button6.Size = new System.Drawing.Size(200, 38);
+            this.button6.Size = new System.Drawing.Size(199, 38);
             this.button6.TabIndex = 1;
             this.button6.Text = "Carta ";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -95,7 +95,7 @@ namespace Project_restaurant_reservation
             this.btn_ReservasHechas.Location = new System.Drawing.Point(0, 0);
             this.btn_ReservasHechas.Name = "btn_ReservasHechas";
             this.btn_ReservasHechas.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btn_ReservasHechas.Size = new System.Drawing.Size(200, 35);
+            this.btn_ReservasHechas.Size = new System.Drawing.Size(199, 35);
             this.btn_ReservasHechas.TabIndex = 0;
             this.btn_ReservasHechas.Text = "Historial";
             this.btn_ReservasHechas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,7 +110,7 @@ namespace Project_restaurant_reservation
             this.btn_Actividad.Location = new System.Drawing.Point(0, 206);
             this.btn_Actividad.Name = "btn_Actividad";
             this.btn_Actividad.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Actividad.Size = new System.Drawing.Size(200, 45);
+            this.btn_Actividad.Size = new System.Drawing.Size(199, 45);
             this.btn_Actividad.TabIndex = 3;
             this.btn_Actividad.Text = "Actividad";
             this.btn_Actividad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -125,7 +125,7 @@ namespace Project_restaurant_reservation
             this.PanelMenuSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelMenuSubMenu.Location = new System.Drawing.Point(0, 125);
             this.PanelMenuSubMenu.Name = "PanelMenuSubMenu";
-            this.PanelMenuSubMenu.Size = new System.Drawing.Size(200, 81);
+            this.PanelMenuSubMenu.Size = new System.Drawing.Size(199, 81);
             this.PanelMenuSubMenu.TabIndex = 2;
             // 
             // button3
@@ -137,7 +137,7 @@ namespace Project_restaurant_reservation
             this.button3.Location = new System.Drawing.Point(0, 35);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button3.Size = new System.Drawing.Size(200, 38);
+            this.button3.Size = new System.Drawing.Size(199, 38);
             this.button3.TabIndex = 1;
             this.button3.Text = "Carta ";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -153,7 +153,7 @@ namespace Project_restaurant_reservation
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(200, 35);
+            this.button2.Size = new System.Drawing.Size(199, 35);
             this.button2.TabIndex = 0;
             this.button2.Text = "Reservar";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,7 +169,7 @@ namespace Project_restaurant_reservation
             this.btn_Menu.Location = new System.Drawing.Point(0, 80);
             this.btn_Menu.Name = "btn_Menu";
             this.btn_Menu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_Menu.Size = new System.Drawing.Size(200, 45);
+            this.btn_Menu.Size = new System.Drawing.Size(199, 45);
             this.btn_Menu.TabIndex = 1;
             this.btn_Menu.Text = "Menu";
             this.btn_Menu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,15 +181,16 @@ namespace Project_restaurant_reservation
             this.logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(200, 80);
+            this.logo.Size = new System.Drawing.Size(199, 80);
             this.logo.TabIndex = 0;
             // 
             // panelchild
             // 
+            this.panelchild.BackColor = System.Drawing.Color.PaleGoldenrod;
             this.panelchild.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelchild.Location = new System.Drawing.Point(200, 0);
+            this.panelchild.Location = new System.Drawing.Point(199, 0);
             this.panelchild.Name = "panelchild";
-            this.panelchild.Size = new System.Drawing.Size(809, 504);
+            this.panelchild.Size = new System.Drawing.Size(810, 504);
             this.panelchild.TabIndex = 1;
             // 
             // PlantUsuarios

@@ -24,28 +24,17 @@ namespace Project_restaurant_reservation
         private void Registro_platos_Load(object sender, EventArgs e)
         {
             
-            dtg_platos.DataSource = listaU();
-            /*SqlCommand cmd = new SqlCommand("SELECT tipl_nombre FROM tbl_tipoplato", con);
-            con.Open();
-            SqlDataReader registro = cmd.ExecuteReader();
-            while (registro.Read())
-            {
-                
-                cmb_tplato.Items.Add(registro["tipl_nombre"].ToString());
-            }
-            con.Close();
-            */
+            dtg_platos.DataSource = listaU();//trae toda la informacion
             cmb_tplato.DataSource = CargarCombo();
             cmb_tplato.DisplayMember = "tipl_nombre";
             cmb_tplato.ValueMember = "tipl_id";
 
         }
 
-        public DataTable listaU()
+        public  DataTable listaU()
         {
             
             con.Open();
-            //SqlCommand cmd1 = new SqlCommand("SELECT * FROM tbl_platos", con);
             DataTable dt = new DataTable();
             string consu = "SELECT* FROM tbl_platos";
             SqlCommand cmd1 = new SqlCommand(consu,con);
@@ -125,7 +114,7 @@ namespace Project_restaurant_reservation
                 // con.Open();
                 MemoryStream archivoM = new MemoryStream();
                 // pb_imagen.Image.Save(archivoM, ImageFormat.Bmp);
-                string actu = "UPDATE tbl_platos SET pla_nombre=@pla_nombre, pla_precio=@pla_precio, pla_imagen=@pla_imagen,tipl_id=@plato WHERE pla_id =@pla_id";
+                string actu = "UPDATE tbl_platos SET pla_nombre=@pla_nombre, pla_precio=@pla_precio, pla_imagen=@pla_imagen,tipl_id=@plato WHERE pla_id = @pla_id";
                 SqlCommand cmd3 = new SqlCommand(actu, con);
 
                 int id = Convert.ToInt32(dtg_platos.CurrentRow.Cells["pla_id"].Value.ToString());

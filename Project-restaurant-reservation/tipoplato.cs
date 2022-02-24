@@ -29,13 +29,13 @@ namespace Project_restaurant_reservation
         {
 
             con.Open();
-            //SqlCommand cmd1 = new SqlCommand("SELECT * FROM tbl_platos", con);
             DataTable dt = new DataTable();
-            string consu = "SELECT* FROM tbl_platos";
+            string consu = "SELECT* FROM tbl_tipoplato";
             SqlCommand cmd1 = new SqlCommand(consu, con);
             SqlDataAdapter da = new SqlDataAdapter(cmd1);
             da.Fill(dt);
             return dt;
+            
         }
         private void btn_guardar_Click(object sender, EventArgs e)
         {
@@ -73,6 +73,7 @@ namespace Project_restaurant_reservation
                 con.Close();
                 dtg_tipop.DataSource = listaP();
                 btn_guardar.Enabled = true;
+                limpiar();
             }
             catch (Exception)
             {
@@ -86,13 +87,18 @@ namespace Project_restaurant_reservation
         {
             try
             {
+                
                 int id = Convert.ToInt32(dtg_tipop.CurrentRow.Cells["tipl_id"].Value.ToString());
                 string del = "DELETE FROM tbl_tipoplato WHERE tipl_id = @tipl_id";
                 SqlCommand cmd2 = new SqlCommand(del, con);
                 cmd2.Parameters.AddWithValue("tipl_id", id);
                 cmd2.ExecuteNonQuery();
                 MessageBox.Show("Datos Eliminados");
+                con.Close();
                 dtg_tipop.DataSource = listaP();
+                btn_guardar.Enabled = true;
+                limpiar();
+                
             }
             catch (Exception)
             {
@@ -128,9 +134,9 @@ namespace Project_restaurant_reservation
         {
             try
             {
-                //con.Open();
+                
                 SqlCommand cmd = new SqlCommand("INSERT INTO tbl_tipoplato (tipl_nombre) VALUES(@tipl_nombre)", con);
-                cmd.Parameters.AddWithValue("nomb", nom);
+                cmd.Parameters.AddWithValue("tipl_nombre", nom);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 dtg_tipop.DataSource = listaP();

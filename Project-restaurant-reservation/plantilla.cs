@@ -8,70 +8,103 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Project_restaurant_reservation
 {
-    public partial class plantilla : Form
+    public partial class plantilla_Admin : Form
     {
-        public plantilla()
+        public plantilla_Admin()
         {
             InitializeComponent();
+            Diseño();
         }
 
-        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           // Usuario usu = new Usuario();
-            //usu.MdiParent = this;
-            //usu.Show();
-        }
-
-        private void mesasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Reserva rs = new Reserva();
-            rs.MdiParent = this;
-            rs.Show();
-
-        }
-
-        private void tipoPlatoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            tipoplato tp = new tipoplato();
-            tp.MdiParent = this;
-            tp.Show();
-        }
-
-        private void tipoUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-            tipoUsuario tU = new tipoUsuario();
-            tU.MdiParent = this;
-            tU.Show();
-        }
-
-        private void tipoServicioToolStripMenuItem_Click(object sender, EventArgs e)
+        private void plantilla_Load(object sender, EventArgs e)
         {
 
         }
 
-       
-        private void usuariosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void Diseño()
         {
-            Usuario usu = new Usuario();
-            usu.MdiParent = this;
-            usu.Show();
+            panelManteSubMenu.Visible = false;
+            
+        }
+
+        private void hideSubMenu()
+        {
+            if (panelManteSubMenu.Visible == true)
+                panelManteSubMenu.Visible = false;
+        }
+
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+            {
+                subMenu.Visible = false;
+
+            }
+        }
+
+        private Form activateForm = null;
+
+        //crea un contentenedor padre para almacenar un formulario hijo
+        private void openChildForm(Form childForm)
+        {
+            if (activateForm != null)
+                activateForm.Close();
+            activateForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelchild.Controls.Add(childForm);
+            panelchild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void btn_Mantenimiento_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelManteSubMenu);
+        }
+
+        //tabla usuarios
+        private void btn_Tusuario_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Usuario());
+            hideSubMenu();
 
         }
 
-        private void platosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_roles_Click(object sender, EventArgs e)
         {
-            Registro_platos rp = new Registro_platos();
-            rp.MdiParent = this;
-            rp.Show();
+            openChildForm(new tipoUsuario());
+            hideSubMenu();
         }
 
-        //Este no tocar ni poner nada
-        private void mantenimientosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btn_Treservas_Click(object sender, EventArgs e)
         {
+            openChildForm(new Reserva());
+            hideSubMenu();
 
+        }
+
+        //registro platos
+        private void btn_Tplatos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Registro_platos());
+            hideSubMenu();
+        }
+
+        //tipo de platos
+        private void btn_TiPlatos_Click(object sender, EventArgs e)
+        {
+            openChildForm(new tipoplato());
+            hideSubMenu();
         }
     }
 }

@@ -47,13 +47,13 @@ namespace Project_restaurant_reservation
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.txt_tipop);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(13, 13);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(775, 128);
+            this.panel1.Size = new System.Drawing.Size(719, 128);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -69,7 +69,7 @@ namespace Project_restaurant_reservation
             // 
             // txt_tipop
             // 
-            this.txt_tipop.Location = new System.Drawing.Point(340, 60);
+            this.txt_tipop.Location = new System.Drawing.Point(338, 53);
             this.txt_tipop.Name = "txt_tipop";
             this.txt_tipop.Size = new System.Drawing.Size(205, 20);
             this.txt_tipop.TabIndex = 6;
@@ -78,10 +78,10 @@ namespace Project_restaurant_reservation
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(205, 60);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 13);
+            this.label3.Size = new System.Drawing.Size(127, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Tipo del plato:";
             // 
@@ -92,48 +92,51 @@ namespace Project_restaurant_reservation
             this.panel2.Controls.Add(this.btn_guardar);
             this.panel2.Location = new System.Drawing.Point(12, 147);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(775, 68);
+            this.panel2.Size = new System.Drawing.Size(720, 68);
             this.panel2.TabIndex = 1;
             // 
             // btn_editar
             // 
-            this.btn_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editar.Location = new System.Drawing.Point(365, 19);
+            this.btn_editar.BackColor = System.Drawing.Color.Gold;
+            this.btn_editar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar.Location = new System.Drawing.Point(359, 19);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(98, 38);
             this.btn_editar.TabIndex = 14;
             this.btn_editar.Text = "Editar";
-            this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.UseVisualStyleBackColor = false;
             this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(564, 19);
+            this.btnEliminar.BackColor = System.Drawing.Color.LightCoral;
+            this.btnEliminar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(553, 19);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(93, 38);
             this.btnEliminar.TabIndex = 13;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btn_guardar
             // 
-            this.btn_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_guardar.BackColor = System.Drawing.Color.LightGreen;
+            this.btn_guardar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_guardar.Location = new System.Drawing.Point(162, 19);
             this.btn_guardar.Name = "btn_guardar";
             this.btn_guardar.Size = new System.Drawing.Size(97, 38);
             this.btn_guardar.TabIndex = 12;
             this.btn_guardar.Text = "Guardar";
-            this.btn_guardar.UseVisualStyleBackColor = true;
+            this.btn_guardar.UseVisualStyleBackColor = false;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.dtg_tipop);
-            this.panel3.Location = new System.Drawing.Point(97, 231);
+            this.panel3.Location = new System.Drawing.Point(195, 225);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(575, 192);
+            this.panel3.Size = new System.Drawing.Size(412, 192);
             this.panel3.TabIndex = 1;
             // 
             // dtg_tipop
@@ -141,7 +144,7 @@ namespace Project_restaurant_reservation
             this.dtg_tipop.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtg_tipop.Location = new System.Drawing.Point(4, 4);
             this.dtg_tipop.Name = "dtg_tipop";
-            this.dtg_tipop.Size = new System.Drawing.Size(568, 182);
+            this.dtg_tipop.Size = new System.Drawing.Size(400, 185);
             this.dtg_tipop.TabIndex = 0;
             this.dtg_tipop.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtg_tipop_CellMouseDoubleClick);
             // 
@@ -149,7 +152,8 @@ namespace Project_restaurant_reservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 429);
+            this.BackColor = System.Drawing.Color.LemonChiffon;
+            this.ClientSize = new System.Drawing.Size(768, 429);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

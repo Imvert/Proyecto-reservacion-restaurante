@@ -66,7 +66,7 @@ namespace Project_restaurant_reservation
                         this.Hide();
                         if (dt1.Rows[0][1].ToString() == "1")//administrador
                         {
-                            new plantilla().ShowDialog();
+                            new plantilla_Admin().ShowDialog();
                         }
                         else if (dt1.Rows[0][1].ToString() == "2")//Cliente
                         {
