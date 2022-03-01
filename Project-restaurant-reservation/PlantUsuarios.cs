@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Common.Cache;
 
 namespace Project_restaurant_reservation
 {
@@ -20,7 +21,7 @@ namespace Project_restaurant_reservation
 
         private void PlantUsuarios_Load(object sender, EventArgs e)
         {
-
+            LoadUserData();
         }
 
         private void Diseño()
@@ -98,6 +99,24 @@ namespace Project_restaurant_reservation
             showSubMenu(panelActividadSubMenu);
         }
 
+        private void LoadUserData()
+        {
 
+            lbl_nombre.Text = "Bienvenido: "+UserLoginCache.name;
+            lbl_Correo.Text =  UserLoginCache.correo;
+        }
+
+        //nada,no tocar
+        private void logo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //private void btnCerrar_Click(object sender, EventArgs e)
+        //{
+        //    if (MessageBox.Show("¿Esta seguro que quiere salir de la aplicacion?", "Cuidado",
+        //       MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+        //        Application.Exit();
+        //}
     }
 }

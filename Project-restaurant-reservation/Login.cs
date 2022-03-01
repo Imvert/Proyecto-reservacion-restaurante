@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Common.Cache;
 
 namespace Project_restaurant_reservation
 {
@@ -35,18 +36,23 @@ namespace Project_restaurant_reservation
             }
         }
 
-        private void loguear(string usuario, string pass)
+        public  void loguear(string usuario, string pass)
         {
             try
             {
 
                 //Verificar datos si existen o no usuario
                 con.Open();
-                SqlCommand cmd = new SqlCommand("SELECT usu_nombre, tusu_id FROM tbl_usuario WHERE usu_nomlogin = @usuario", con);
+                SqlCommand cmd = new SqlCommand("SELECT usu_id,usu_nombre,usu_cedula,usu_correo, tusu_id FROM tbl_usuario WHERE usu_nomlogin = @usuario", con);
                 cmd.Parameters.AddWithValue("usuario", usuario);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
+                //obteniendo los datos en cache para validaciones
+                UserLoginCache.name = dt.Rows[0]["usu_nombre"].ToString();
+                UserLoginCache.idUsuario =  Convert.ToInt32( dt.Rows[0]["usu_id"]);
+                UserLoginCache.cedula = dt.Rows[0]["usu_cedula"].ToString();
+                UserLoginCache.correo = dt.Rows[0]["usu_correo"].ToString();
                 con.Close();
 
                 //Comparando usuario de la base de datos y la contraseña encriptada
@@ -60,7 +66,7 @@ namespace Project_restaurant_reservation
                     DataTable dt1 = new DataTable();
                     sda1.Fill(dt1);
                     con.Close();
-
+                   
                     if (dt1.Rows.Count == 1)
                     {
                         this.Hide();
@@ -96,6 +102,8 @@ namespace Project_restaurant_reservation
             {
 
             }
+
+            
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)
@@ -104,5 +112,7 @@ namespace Project_restaurant_reservation
             this.Hide();
             this.Close();
         }
+       
     }
+    
 }

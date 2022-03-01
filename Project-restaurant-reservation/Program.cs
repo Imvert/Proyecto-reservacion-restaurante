@@ -16,11 +16,11 @@ namespace Project_restaurant_reservation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Login());
+            Application.Run(new Login());
             //Application.Run(new Registro_platos());
             //Application.Run(new Registro_usuarios());
             //Application.Run(new Reserva_mesa());
-            Application.Run(new plantilla_Admin());
+            //Application.Run(new plantilla_Admin()); por revisar aun
             //Application.Run(new Reserva());
             //Application.Run(new PlantUsuarios());
         }

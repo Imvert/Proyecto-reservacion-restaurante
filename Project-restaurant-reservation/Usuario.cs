@@ -141,7 +141,8 @@ namespace Project_restaurant_reservation
             try
             {
                 //con.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO tbl_usuario (usu_nombre,usu_cedula,usu_nomlogin,usu_password,usu_direccion,usu_correo,usu_estado,usu_telefono,tusu_id) VALUES(@nomb,@ced,@nick,@pass,@dire,@correo,@estado,@telf,@rol)", con);
+                SqlCommand cmd = new SqlCommand("INSERT INTO tbl_usuario (usu_nombre,usu_cedula,usu_nomlogin,usu_password,usu_direccion,usu_correo,usu_estado,usu_telefono,tusu_id) " +
+                    "VALUES(@nomb,@ced,@nick,@pass,@dire,@correo,@estado,@telf,@rol)", con);
                 cmd.Parameters.AddWithValue("nomb", nom);
                 cmd.Parameters.AddWithValue("ced", cedula);
                 cmd.Parameters.AddWithValue("nick", nick);

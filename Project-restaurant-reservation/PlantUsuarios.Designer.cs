@@ -39,10 +39,13 @@ namespace Project_restaurant_reservation
             this.button2 = new System.Windows.Forms.Button();
             this.btn_Menu = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.Panel();
+            this.lbl_nombre = new System.Windows.Forms.Label();
             this.panelchild = new System.Windows.Forms.Panel();
+            this.lbl_Correo = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelActividadSubMenu.SuspendLayout();
             this.PanelMenuSubMenu.SuspendLayout();
+            this.logo.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -178,11 +181,25 @@ namespace Project_restaurant_reservation
             // 
             // logo
             // 
+            this.logo.BackColor = System.Drawing.Color.DarkKhaki;
+            this.logo.Controls.Add(this.lbl_Correo);
+            this.logo.Controls.Add(this.lbl_nombre);
             this.logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(199, 80);
             this.logo.TabIndex = 0;
+            this.logo.Paint += new System.Windows.Forms.PaintEventHandler(this.logo_Paint);
+            // 
+            // lbl_nombre
+            // 
+            this.lbl_nombre.AutoSize = true;
+            this.lbl_nombre.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombre.Location = new System.Drawing.Point(12, 9);
+            this.lbl_nombre.Name = "lbl_nombre";
+            this.lbl_nombre.Size = new System.Drawing.Size(56, 16);
+            this.lbl_nombre.TabIndex = 0;
+            this.lbl_nombre.Text = "nombre";
             // 
             // panelchild
             // 
@@ -193,6 +210,16 @@ namespace Project_restaurant_reservation
             this.panelchild.Size = new System.Drawing.Size(810, 504);
             this.panelchild.TabIndex = 1;
             // 
+            // lbl_Correo
+            // 
+            this.lbl_Correo.AutoSize = true;
+            this.lbl_Correo.Font = new System.Drawing.Font("MingLiU_HKSCS-ExtB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Correo.Location = new System.Drawing.Point(12, 44);
+            this.lbl_Correo.Name = "lbl_Correo";
+            this.lbl_Correo.Size = new System.Drawing.Size(96, 16);
+            this.lbl_Correo.TabIndex = 1;
+            this.lbl_Correo.Text = "labelCorreo";
+            // 
             // PlantUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -201,11 +228,13 @@ namespace Project_restaurant_reservation
             this.Controls.Add(this.panelchild);
             this.Controls.Add(this.panelSideMenu);
             this.Name = "PlantUsuarios";
-            this.Text = "PlantUsuarios";
+            this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.PlantUsuarios_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelActividadSubMenu.ResumeLayout(false);
             this.PanelMenuSubMenu.ResumeLayout(false);
+            this.logo.ResumeLayout(false);
+            this.logo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -223,5 +252,7 @@ namespace Project_restaurant_reservation
         private System.Windows.Forms.Button btn_ReservasHechas;
         private System.Windows.Forms.Button btn_Actividad;
         private System.Windows.Forms.Panel panelchild;
+        private System.Windows.Forms.Label lbl_nombre;
+        private System.Windows.Forms.Label lbl_Correo;
     }
 }

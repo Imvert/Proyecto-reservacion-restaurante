@@ -106,5 +106,13 @@ namespace Project_restaurant_reservation
             openChildForm(new tipoplato());
             hideSubMenu();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Esta seguro que quiere salir de la aplicacion?", "Cuidado",
+              MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                //Application.Exit();
+                this.Close();
+        }
     }
 }

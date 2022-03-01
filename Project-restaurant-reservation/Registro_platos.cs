@@ -41,8 +41,7 @@ namespace Project_restaurant_reservation
             SqlDataAdapter da = new SqlDataAdapter(cmd1);
             da.Fill(dt);
             return dt;
-            
-            
+                 
         }
 
         public DataTable CargarCombo()
@@ -52,8 +51,7 @@ namespace Project_restaurant_reservation
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt1 = new DataTable();
             sda.Fill(dt1);
-            return dt1;
-           
+            return dt1;     
             
         }
 
