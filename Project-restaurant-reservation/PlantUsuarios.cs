@@ -91,6 +91,7 @@ namespace Project_restaurant_reservation
 
         private void btn_ReservasHechas_Click(object sender, EventArgs e)
         {
+            openChildForm( new HistoriaCliente());
             hideSubMenu();
         }
 

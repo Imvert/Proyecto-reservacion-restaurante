@@ -66,9 +66,6 @@ namespace Project_restaurant_reservation
                 cmd.Parameters.AddWithValue("telf", telefono);
                 cmd.Parameters.AddWithValue("rol", "2");
                 cmd.ExecuteNonQuery();
-                //SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                //DataTable dt = new DataTable();
-                //sda.Fill(dt);
                 con.Close();
 
             }

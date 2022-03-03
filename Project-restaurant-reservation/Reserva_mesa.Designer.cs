@@ -30,68 +30,63 @@ namespace Project_restaurant_reservation
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txt_id = new System.Windows.Forms.Label();
+            this.btn_Salir = new System.Windows.Forms.Button();
+            this.cmb_nuMesa = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmb_servicio = new System.Windows.Forms.ComboBox();
+            this.dtp_fecha = new System.Windows.Forms.DateTimePicker();
+            this.btn_Reservar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.N_comensales = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.mes_10 = new System.Windows.Forms.Label();
+            this.mes_9 = new System.Windows.Forms.Label();
+            this.mes_8 = new System.Windows.Forms.Label();
+            this.mes_7 = new System.Windows.Forms.Label();
+            this.mes_6 = new System.Windows.Forms.Label();
+            this.mes_5 = new System.Windows.Forms.Label();
+            this.mes_4 = new System.Windows.Forms.Label();
+            this.mes_3 = new System.Windows.Forms.Label();
+            this.mes_2 = new System.Windows.Forms.Label();
+            this.mes_1 = new System.Windows.Forms.Label();
+            this.txt_cliente = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn_Salir = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N_comensales)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackgroundImage = global::Project_restaurant_reservation.Properties.Resources.fondo_restaurantes;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.txt_id);
             this.panel3.Controls.Add(this.btn_Salir);
-            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.cmb_nuMesa);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.cmb_servicio);
+            this.panel3.Controls.Add(this.dtp_fecha);
+            this.panel3.Controls.Add(this.btn_Reservar);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.numericUpDown1);
+            this.panel3.Controls.Add(this.N_comensales);
             this.panel3.Controls.Add(this.panel2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txt_cliente);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.label3);
@@ -100,16 +95,33 @@ namespace Project_restaurant_reservation
             this.panel3.Size = new System.Drawing.Size(809, 452);
             this.panel3.TabIndex = 8;
             // 
-            // comboBox2
+            // txt_id
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "A la carta",
-            "Almuerzos"});
-            this.comboBox2.Location = new System.Drawing.Point(191, 283);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(150, 21);
-            this.comboBox2.TabIndex = 15;
+            this.txt_id.AutoSize = true;
+            this.txt_id.BackColor = System.Drawing.Color.Transparent;
+            this.txt_id.Location = new System.Drawing.Point(150, 116);
+            this.txt_id.Name = "txt_id";
+            this.txt_id.Size = new System.Drawing.Size(35, 13);
+            this.txt_id.TabIndex = 17;
+            this.txt_id.Text = "label7";
+            // 
+            // btn_Salir
+            // 
+            this.btn_Salir.Location = new System.Drawing.Point(18, 10);
+            this.btn_Salir.Name = "btn_Salir";
+            this.btn_Salir.Size = new System.Drawing.Size(33, 32);
+            this.btn_Salir.TabIndex = 16;
+            this.btn_Salir.Text = "X";
+            this.btn_Salir.UseVisualStyleBackColor = true;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            // 
+            // cmb_nuMesa
+            // 
+            this.cmb_nuMesa.FormattingEnabled = true;
+            this.cmb_nuMesa.Location = new System.Drawing.Point(191, 283);
+            this.cmb_nuMesa.Name = "cmb_nuMesa";
+            this.cmb_nuMesa.Size = new System.Drawing.Size(150, 21);
+            this.cmb_nuMesa.TabIndex = 15;
             // 
             // label9
             // 
@@ -171,33 +183,36 @@ namespace Project_restaurant_reservation
             this.label5.TabIndex = 4;
             this.label5.Text = "Servicio:";
             // 
-            // comboBox1
+            // cmb_servicio
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmb_servicio.FormattingEnabled = true;
+            this.cmb_servicio.Items.AddRange(new object[] {
             "A la carta",
             "Almuerzos"});
-            this.comboBox1.Location = new System.Drawing.Point(191, 238);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmb_servicio.Location = new System.Drawing.Point(191, 238);
+            this.cmb_servicio.Name = "cmb_servicio";
+            this.cmb_servicio.Size = new System.Drawing.Size(150, 21);
+            this.cmb_servicio.TabIndex = 5;
             // 
-            // dateTimePicker1
+            // dtp_fecha
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(191, 193);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.dtp_fecha.Location = new System.Drawing.Point(191, 193);
+            this.dtp_fecha.MaxDate = new System.DateTime(2022, 12, 31, 0, 0, 0, 0);
+            this.dtp_fecha.MinDate = new System.DateTime(2022, 3, 2, 0, 0, 0, 0);
+            this.dtp_fecha.Name = "dtp_fecha";
+            this.dtp_fecha.Size = new System.Drawing.Size(200, 20);
+            this.dtp_fecha.TabIndex = 8;
             // 
-            // button1
+            // btn_Reservar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(136, 379);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 27);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Reservar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Reservar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reservar.Location = new System.Drawing.Point(136, 379);
+            this.btn_Reservar.Name = "btn_Reservar";
+            this.btn_Reservar.Size = new System.Drawing.Size(122, 27);
+            this.btn_Reservar.TabIndex = 8;
+            this.btn_Reservar.Text = "Reservar";
+            this.btn_Reservar.UseVisualStyleBackColor = true;
+            this.btn_Reservar.Click += new System.EventHandler(this.btn_Reservar_Click);
             // 
             // label4
             // 
@@ -210,267 +225,180 @@ namespace Project_restaurant_reservation
             this.label4.TabIndex = 3;
             this.label4.Text = "Fecha:";
             // 
-            // numericUpDown1
+            // N_comensales
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(191, 152);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(48, 20);
-            this.numericUpDown1.TabIndex = 6;
+            this.N_comensales.Location = new System.Drawing.Point(191, 152);
+            this.N_comensales.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.N_comensales.Name = "N_comensales";
+            this.N_comensales.Size = new System.Drawing.Size(48, 20);
+            this.N_comensales.TabIndex = 6;
+            this.N_comensales.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.label26);
-            this.panel2.Controls.Add(this.label27);
-            this.panel2.Controls.Add(this.label28);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(458, 79);
+            this.panel2.Controls.Add(this.mes_10);
+            this.panel2.Controls.Add(this.mes_9);
+            this.panel2.Controls.Add(this.mes_8);
+            this.panel2.Controls.Add(this.mes_7);
+            this.panel2.Controls.Add(this.mes_6);
+            this.panel2.Controls.Add(this.mes_5);
+            this.panel2.Controls.Add(this.mes_4);
+            this.panel2.Controls.Add(this.mes_3);
+            this.panel2.Controls.Add(this.mes_2);
+            this.panel2.Controls.Add(this.mes_1);
+            this.panel2.Location = new System.Drawing.Point(469, 134);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(325, 357);
+            this.panel2.Size = new System.Drawing.Size(325, 315);
             this.panel2.TabIndex = 7;
             // 
-            // label25
+            // mes_10
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(253, 284);
-            this.label25.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(64, 19);
-            this.label25.TabIndex = 19;
-            this.label25.Text = "Mesa 20";
+            this.mes_10.AutoSize = true;
+            this.mes_10.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_10.Location = new System.Drawing.Point(183, 224);
+            this.mes_10.MaximumSize = new System.Drawing.Size(250, 270);
+            this.mes_10.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_10.Name = "mes_10";
+            this.mes_10.Size = new System.Drawing.Size(70, 70);
+            this.mes_10.TabIndex = 9;
+            this.mes_10.Text = "Mesa 10";
+            this.mes_10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label26
+            // mes_9
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(171, 284);
-            this.label26.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(64, 19);
-            this.label26.TabIndex = 18;
-            this.label26.Text = "Mesa 19";
+            this.mes_9.AutoSize = true;
+            this.mes_9.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_9.Location = new System.Drawing.Point(94, 224);
+            this.mes_9.MaximumSize = new System.Drawing.Size(250, 270);
+            this.mes_9.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_9.Name = "mes_9";
+            this.mes_9.Size = new System.Drawing.Size(70, 70);
+            this.mes_9.TabIndex = 8;
+            this.mes_9.Text = "Mesa 9";
+            this.mes_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label27
+            // mes_8
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(91, 284);
-            this.label27.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(64, 19);
-            this.label27.TabIndex = 17;
-            this.label27.Text = "Mesa 18";
+            this.mes_8.AutoSize = true;
+            this.mes_8.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_8.Location = new System.Drawing.Point(242, 121);
+            this.mes_8.MaximumSize = new System.Drawing.Size(250, 270);
+            this.mes_8.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_8.Name = "mes_8";
+            this.mes_8.Size = new System.Drawing.Size(70, 70);
+            this.mes_8.TabIndex = 7;
+            this.mes_8.Text = "Mesa 8";
+            this.mes_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label28
+            // mes_7
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(14, 284);
-            this.label28.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(64, 19);
-            this.label28.TabIndex = 16;
-            this.label28.Text = "Mesa 17";
+            this.mes_7.AutoSize = true;
+            this.mes_7.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_7.Location = new System.Drawing.Point(160, 121);
+            this.mes_7.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_7.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_7.Name = "mes_7";
+            this.mes_7.Size = new System.Drawing.Size(70, 70);
+            this.mes_7.TabIndex = 6;
+            this.mes_7.Text = "Mesa 7";
+            this.mes_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // mes_6
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(253, 215);
-            this.label21.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(64, 19);
-            this.label21.TabIndex = 15;
-            this.label21.Text = "Mesa 16";
+            this.mes_6.AutoSize = true;
+            this.mes_6.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_6.Location = new System.Drawing.Point(84, 121);
+            this.mes_6.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_6.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_6.Name = "mes_6";
+            this.mes_6.Size = new System.Drawing.Size(70, 70);
+            this.mes_6.TabIndex = 5;
+            this.mes_6.Text = "Mesa 6";
+            this.mes_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label22
+            // mes_5
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(171, 215);
-            this.label22.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(64, 19);
-            this.label22.TabIndex = 14;
-            this.label22.Text = "Mesa 15";
+            this.mes_5.AutoSize = true;
+            this.mes_5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_5.Location = new System.Drawing.Point(3, 121);
+            this.mes_5.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_5.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_5.Name = "mes_5";
+            this.mes_5.Size = new System.Drawing.Size(70, 70);
+            this.mes_5.TabIndex = 4;
+            this.mes_5.Text = "Mesa 5";
+            this.mes_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.mes_5.Click += new System.EventHandler(this.label16_Click);
             // 
-            // label23
+            // mes_4
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(91, 215);
-            this.label23.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(64, 19);
-            this.label23.TabIndex = 13;
-            this.label23.Text = "Mesa 14";
+            this.mes_4.AutoSize = true;
+            this.mes_4.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_4.Location = new System.Drawing.Point(242, 19);
+            this.mes_4.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_4.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_4.Name = "mes_4";
+            this.mes_4.Size = new System.Drawing.Size(70, 70);
+            this.mes_4.TabIndex = 3;
+            this.mes_4.Text = "Mesa 4";
+            this.mes_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label24
+            // mes_3
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(14, 215);
-            this.label24.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(64, 19);
-            this.label24.TabIndex = 12;
-            this.label24.Text = "Mesa 13";
+            this.mes_3.AutoSize = true;
+            this.mes_3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_3.Location = new System.Drawing.Point(160, 19);
+            this.mes_3.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_3.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_3.Name = "mes_3";
+            this.mes_3.Size = new System.Drawing.Size(70, 70);
+            this.mes_3.TabIndex = 2;
+            this.mes_3.Text = "Mesa 3";
+            this.mes_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label17
+            // mes_2
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(253, 143);
-            this.label17.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 19);
-            this.label17.TabIndex = 11;
-            this.label17.Text = "Mesa 12";
+            this.mes_2.AutoSize = true;
+            this.mes_2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_2.Location = new System.Drawing.Point(80, 19);
+            this.mes_2.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_2.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_2.Name = "mes_2";
+            this.mes_2.Size = new System.Drawing.Size(70, 70);
+            this.mes_2.TabIndex = 1;
+            this.mes_2.Text = "Mesa 2";
+            this.mes_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label18
+            // mes_1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(171, 143);
-            this.label18.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(64, 19);
-            this.label18.TabIndex = 10;
-            this.label18.Text = "Mesa 11";
+            this.mes_1.AutoSize = true;
+            this.mes_1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mes_1.Location = new System.Drawing.Point(3, 19);
+            this.mes_1.MaximumSize = new System.Drawing.Size(250, 250);
+            this.mes_1.MinimumSize = new System.Drawing.Size(70, 70);
+            this.mes_1.Name = "mes_1";
+            this.mes_1.Size = new System.Drawing.Size(70, 70);
+            this.mes_1.TabIndex = 0;
+            this.mes_1.Text = "Mesa 1";
+            this.mes_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // txt_cliente
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(91, 143);
-            this.label19.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(64, 19);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Mesa 10";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(14, 143);
-            this.label20.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(56, 19);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Mesa 9";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(253, 74);
-            this.label13.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(56, 19);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Mesa 8";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(171, 74);
-            this.label14.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(56, 19);
-            this.label14.TabIndex = 6;
-            this.label14.Text = "Mesa 7";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(91, 74);
-            this.label15.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(56, 19);
-            this.label15.TabIndex = 5;
-            this.label15.Text = "Mesa 6";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(14, 74);
-            this.label16.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 19);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Mesa 5";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(253, 16);
-            this.label12.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(56, 19);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Mesa 4";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(171, 16);
-            this.label11.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 19);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Mesa 3";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(91, 16);
-            this.label10.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 19);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Mesa 2";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 16);
-            this.label7.MaximumSize = new System.Drawing.Size(250, 250);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 19);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Mesa 1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(191, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(177, 20);
-            this.textBox1.TabIndex = 7;
+            this.txt_cliente.Enabled = false;
+            this.txt_cliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cliente.Location = new System.Drawing.Point(191, 110);
+            this.txt_cliente.Name = "txt_cliente";
+            this.txt_cliente.ReadOnly = true;
+            this.txt_cliente.Size = new System.Drawing.Size(177, 24);
+            this.txt_cliente.TabIndex = 7;
             // 
             // label2
             // 
@@ -505,15 +433,13 @@ namespace Project_restaurant_reservation
             this.label3.TabIndex = 2;
             this.label3.Text = "N° de Comensales:";
             // 
-            // btn_Salir
+            // pictureBox1
             // 
-            this.btn_Salir.Location = new System.Drawing.Point(18, 10);
-            this.btn_Salir.Name = "btn_Salir";
-            this.btn_Salir.Size = new System.Drawing.Size(33, 32);
-            this.btn_Salir.TabIndex = 16;
-            this.btn_Salir.Text = "X";
-            this.btn_Salir.UseVisualStyleBackColor = true;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            this.pictureBox1.Location = new System.Drawing.Point(656, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 118);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // Reserva_mesa
             // 
@@ -524,11 +450,13 @@ namespace Project_restaurant_reservation
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reserva_mesa";
             this.Text = "Reserva_mesa";
+            this.Load += new System.EventHandler(this.Reserva_mesa_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N_comensales)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -538,40 +466,32 @@ namespace Project_restaurant_reservation
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmb_servicio;
+        private System.Windows.Forms.DateTimePicker dtp_fecha;
+        private System.Windows.Forms.Button btn_Reservar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.NumericUpDown N_comensales;
+        private System.Windows.Forms.TextBox txt_cliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmb_nuMesa;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label mes_8;
+        private System.Windows.Forms.Label mes_7;
+        private System.Windows.Forms.Label mes_6;
+        private System.Windows.Forms.Label mes_5;
+        private System.Windows.Forms.Label mes_4;
+        private System.Windows.Forms.Label mes_3;
+        private System.Windows.Forms.Label mes_2;
+        private System.Windows.Forms.Label mes_1;
         private System.Windows.Forms.Button btn_Salir;
+        private System.Windows.Forms.Label mes_10;
+        private System.Windows.Forms.Label mes_9;
+        private System.Windows.Forms.Label txt_id;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
